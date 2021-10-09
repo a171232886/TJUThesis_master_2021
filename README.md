@@ -5,6 +5,13 @@
 - 参考[tjuthesis_master_2016](https://github.com/jiangqideng/tjuthesis_master_2016)和[TJUThesisLatexTemplate](https://github.com/twtstudio/TJUThesisLatexTemplate), 依照《天津大学关于博士、硕士学位论文统一格式的规定（2021年修订）》中要求进行格式修改。
 - 此外，鉴于[tjuthesis_master_2016](https://github.com/jiangqideng/tjuthesis_master_2016)只能先由latex编译成dvi在转换成pdf的形式较为繁琐，现已修改为由xelatex直接编译并生成pdf。因此，本模板可直接在Overleaf或TeXstudio中同时编辑和预览。
 
+# 更新2021.10.9
+1.去掉目录中，参考文献与图表引用中的方框，但保留其链接
+2.修正页边距设置
+3.修改表格行距，使其更接近word2016中的效果
+4.封面格式修改
+5.其他修改
+
 # 使用方式
 ## Overleaf(推荐方式)
 [Overleaf](https://www.overleaf.com/)是一个免费且不需要实名认证的在线Latex编辑平台，并且不需要翻墙。写过行文论文的同学应该知道，对于多人协作便捷以及管理已有tex文件相当方便。**相当于打开一个网页，在线编辑，远端服务器编译**，免去了Texlive安装的麻烦和电脑硬件设施的困扰。
