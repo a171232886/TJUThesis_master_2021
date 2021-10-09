@@ -1,0 +1,86 @@
+% !Mode:: "TeX:UTF-8"
+%  Authors: 张井   Jing Zhang: prayever@gmail.com     天津大学2010级管理与经济学部信息管理与信息系统专业硕士生
+%           余蓝涛 Lantao Yu: lantaoyu1991@gmail.com  天津大学2008级精密仪器与光电子工程学院测控技术与仪器专业本科生
+
+%%%%%%%%%% Package %%%%%%%%%%%%
+% \usepackage{CJK}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}                       % 支持插图处理
+% \usepackage[a4paper,text={146.4true mm,239.2 true mm},top= 26.2true mm,left=31.8 true mm,head=6true mm,headsep=6.5true mm,foot=16.5true mm]{geometry}
+%                                             % 支持版面尺寸设置
+                                            
+\usepackage[paper=a4paper,text={146.6mm,244.1mm},top= 27.5mm,left=35.7mm,head=6mm,headsep=6.5mm,foot=7.9mm]{geometry}
+                                            % 支持版面尺寸设置
+                                            
+\usepackage[squaren]{SIunits}               % 支持国际标准单位
+
+\usepackage{titlesec}                       % 控制标题的宏包
+\usepackage{titletoc}                       % 控制目录的宏包
+\usepackage{fancyhdr}                       % fancyhdr宏包 支持页眉和页脚的相关定义
+\usepackage[UTF8]{ctex}                           % 支持中文显示
+% \usepackage{CJKpunct}                       % 精细调整中文的标点符号
+% \usepackage{color}                          % 支持彩色
+\usepackage{amsmath}                        % AMSLaTeX宏包 用来排出更加漂亮的公式
+\usepackage{amssymb}                        % 数学符号生成命令
+\usepackage[below]{placeins}    %允许上一个section的浮动图形出现在下一个section的开始部分,还提供\FloatBarrier命令,使所有未处理的浮动图形立即被处理
+\usepackage{multirow}                       % 使用Multirow宏包，使得表格可以合并多个row格
+\usepackage{booktabs}                       % 表格，横的粗线；\specialrule{1pt}{0pt}{0pt}
+\usepackage{longtable}                      % 支持跨页的表格。
+\usepackage{tabularx}                       % 自动设置表格的列宽
+\usepackage{subfigure}                      % 支持子图 %centerlast 设置最后一行是否居中
+\usepackage[subfigure]{ccaption}            % 支持子图的中文标题
+\usepackage[sort&compress,numbers]{natbib}  % 支持引用缩写的宏包
+\usepackage{enumitem}                       % 使用enumitem宏包,改变列表项的格式
+\usepackage{calc}                           % 长度可以用+ - * / 进行计算
+\usepackage{txfonts}                        % 字体宏包
+\usepackage{bm}                             % 处理数学公式中的黑斜体的宏包
+\usepackage[amsmath,thmmarks,hyperref]{ntheorem}  % 定理类环境宏包，其中 amsmath 选项用来兼容 AMS LaTeX 的宏包
+
+%\usepackage{CJKnumb}                        % 提供将阿拉伯数字转换成中文数字的命令
+\usepackage{indentfirst}                    % 首行缩进宏包
+% \usepackage{CJKutf8}                        % 用在UTF8编码环境下，它可以自动调用CJK，同时针对UTF8编码作了设置
+%\usepackage{hypbmsec}                      % 用来控制书签中标题显示内容
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\usepackage{xcolor}
+\usepackage{threeparttable}                 %支持对表格中的数据进行注释
+%支持代码环境
+\usepackage{listings}
+\lstset{numbers=left,
+language=[ANSI]{C},
+numberstyle=\tiny,
+extendedchars=false,
+showstringspaces=false,
+breakatwhitespace=false,
+breaklines=true,
+captionpos=b,
+keywordstyle=\color{blue!70},
+commentstyle=\color{red!50!green!50!blue!50},
+frame=shadowbox,
+rulesepcolor=\color{red!20!green!20!blue!20}
+}
+%支持算法环境
+\usepackage[boxed,ruled,lined]{algorithm2e}
+\usepackage{algorithmic}
+
+\usepackage{array}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+
+\def\atemp{xelatex}\ifx\atemp\usewhat
+\usepackage[unicode,
+            pdfstartview=FitH,
+            bookmarksnumbered=true,
+            bookmarksopen=true,
+            colorlinks=true,   % false会出现红框，true文字就是链接
+            pdfborder={0 0 1},
+            citecolor=black,
+            linkcolor=black,    %链接字颜色
+            anchorcolor=black,
+            urlcolor=black,
+            breaklinks=true
+            ]{hyperref}
+\fi
+
