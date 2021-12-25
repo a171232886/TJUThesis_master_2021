@@ -1,11 +1,12 @@
 # TJUThesis_master_2021
 天大博士/硕士学位论文Latex模板，根据2021年版要求修改，可直接在Overleaf上运行
 
+:star:使用该模板所写的论文已通过盲审、查重和答辩，成功提交天津大学图书馆存档！（2021.12.24）
+
 # 主要贡献
 - 参考[tjuthesis_master_2016](https://github.com/jiangqideng/tjuthesis_master_2016)和[TJUThesisLatexTemplate](https://github.com/twtstudio/TJUThesisLatexTemplate), 依照《天津大学关于博士、硕士学位论文统一格式的规定（2021年修订）》中要求进行格式修改。
 - 此外，鉴于[tjuthesis_master_2016](https://github.com/jiangqideng/tjuthesis_master_2016)只能先由latex编译成dvi在转换成pdf的形式较为繁琐，现已修改为由xelatex直接编译并生成pdf。因此，本模板可直接在Overleaf或TeXstudio中同时编辑和预览。
 
-:star:使用该模板所写的论文已通过盲审、查重和答辩，成功提交天津大学图书馆存档！（2021.12.24）
 
 # 更新2021.10.9
 1. 去掉目录中，参考文献与图表引用中的方框，但保留其链接
