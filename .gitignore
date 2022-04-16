@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.blg
+*.synctex
+*.bbl
+*.out
+*.toc
+*.thm
+*.synctex.gz
+tjumain.pdf
