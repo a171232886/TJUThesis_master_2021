@@ -3,12 +3,28 @@
 %           余蓝涛 Lantao Yu: lantaoyu1991@gmail.com  天津大学2008级精密仪器与光电子工程学院测控技术与仪器专业本科生
 
 %%%%%%%%%% Fonts Definition and Basics %%%%%%%%%%%%%%%%%
+% 这里是为了部分专业同学对于生僻字繁体字的需求写的备用解决方案
+% 解决思路：直接使用windows自带的宋体，中易宋体
+% 使用方式：（1）将任意一台Windows电脑的C:\Windows\Fonts\simsun.ttc，
+%               复制到TJUThesis_master_2021-main/fonts文件夹下
+%           （2）对下面两行代码取消注释
+%           （3）注释掉下面的 \newcommand{\song}{\songti} 命令
+% WH的留言：之所以没有直接将simsun.ttc放入代码中，一方面是文件过大，另一方面是中易宋体并不是免费使用的。
+%           不过人家也不会因为你用他们的字体写论文去专门找你。
+%           但是有一些其他的宋体是免费的，这就可以请大家自行发挥了。
+\setCJKfamilyfont{song}[AutoFakeBold = {3.17},Path=fonts/]{simsun.ttc}
+\newcommand{\song}{\CJKfamily{song}}
+
+
 \newcommand{\song}{\songti}    % 宋体
 \newcommand{\fs}{\fangsong}        % 仿宋体
 \newcommand{\kai}{\kaishu}      % 楷体
 \newcommand{\hei}{\heiti}      % 黑体
 \newcommand{\li}{\lishu}        % 隶书
-\newcommand{\kaiGB}{\CJKfamily{kai}}      % 楷体GB2312, 用于独创性说明
+% 《格式》要求独创性说明中的“天津大学”四个字使用楷体GB2312。
+% 但因楷体GB2312和楷体两种字体在此处外观效果相同，直接使用楷体。
+\setCJKfamilyfont{kaigb}[AutoFakeBold = {3.17},Path=fonts/]{楷体_GB2312.ttf}
+\newcommand{\kaiGB}{\CJKfamily{kaigb}}      
 \newcommand{\yihao}{\fontsize{26pt}{26pt}\selectfont}       % 一号, 1.倍行距
 \newcommand{\xiaoyi}{\fontsize{24pt}{24pt}\selectfont}      % 小一, 1.倍行距
 \newcommand{\erhao}{\fontsize{22pt}{1.25\baselineskip}\selectfont}       % 二号, 1.25倍行距
@@ -22,7 +38,8 @@
 
 \setmainfont{Times New Roman}
 
-%\CJKcaption{gb_452}
+{\kaiGB{}}  % 由于未知的bug，第一次使用kaiGB前面会有空格
+
 %\CJKtilde  % 重新定义了波浪符~的意义
 \newcommand\prechaptername{第}
 \newcommand\postchaptername{章}
